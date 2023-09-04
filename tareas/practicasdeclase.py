@@ -17,7 +17,7 @@
 
 
 #un juego para adivinar un numero
-a=10
+#a=10
 b=100
 n=randint(a,b)
 for i in range(5)
