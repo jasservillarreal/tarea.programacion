@@ -104,6 +104,8 @@ print("Programa terminado.")
 
 # rectangulo
 
+""""
+
 class Rectangulo:
     def __init__(self, base, altura):
         self.base = base
@@ -129,5 +131,21 @@ area = mi_rectangulo.area()
 perimetro = mi_rectangulo.perimetro()
 
 # Imprimir los resultados
-print(f"El área del rectángulo es: {area} metros cuadradas")
+print(f"El área del rectángulo es: {area} metros cuadrados")
 print(f"El perímetro del rectángulo es: {perimetro} metros")
+
+"""
+
+# Usando un bucle for para imprimir números del 1 al 5
+
+print(f"Usando un bucle for:")
+for i in range(1, 6):
+    print(i)
+
+# Usando un bucle while para imprimir números del 1 al 5
+
+print("Usando un bucle while:")
+contador = 1
+while contador <= 12:
+    print(contador)
+    contador += 2
