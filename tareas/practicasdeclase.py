@@ -32,12 +32,17 @@ for i in range(5)
         break
 
     """""
+
+""""
 from typing import Any
 
+"""
 
 class vector:
+
+    
     """Clase vector en 2D con coordenadas cartesianas y polares.
-    Permite suma entre vectores y multiplicación"""
+    Permite suma entre vectores y multiplicación
     def __init__(self, a, b):
         self.x = a
         self.y = b
@@ -51,12 +56,14 @@ class vector:
     def __abs__(self):
         return(self.magnitud)
     def __call__(self, m:float):
-        """Metodo que recibe la masa m como flotante y retorna un vector con
+        
+        #Metodo que recibe la masa m como flotante y retorna un vector con
         correspondiente al vector ingresado dividido la masa
 
         Args:
             m (float): masa
-        """
+    
+        
         return(vector(self.x/m, self.y/m))
 #print(type(str(21)))
 F1=vector(2,3)
@@ -76,3 +83,29 @@ else:
 #print("Año",2023-edad)
 #print("Tipo de dato edad",type(edad))
 #print("Tipo de dato name",type(name))
+
+"""
+
+#JSON
+#javaascript,objet,notation
+#cadenas y listas[ESTUDIAR]
+#metodos de dicionarioss
+
+
+for i in [3,20,8]:
+    print(i)
+
+
+lista=[1,2,3,4,5,6,7,8,9]
+print(lista[2:8])
+print(lista[2:8:2])
+#sum(lista)
+
+lista=[1,2,3,4,5,6,7,8,9,10,11]
+    #for i in range(9):
+   # print(lista.append(i**2))
+   # lista.index(2)
+
+"hola mundo!"
+palabra="hola mundo!"
+palabra[-1]

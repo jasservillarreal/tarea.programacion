@@ -39,7 +39,7 @@ print(f"el promedio de mi semestre es {nota_total}")
 #  y contiene un ciclo for y un ciclo while
 
 
-"""""
+""""
 class Vehiculo:
      def __init__(self,marca,modelo,año):
         self.marca=marca
@@ -99,7 +99,7 @@ while True:
         print("Vehículo no encontrado en la lista.")
 
 print("Programa terminado.")
-"""""
+"""
 
 
 # rectangulo
@@ -138,6 +138,8 @@ print(f"El perímetro del rectángulo es: {perimetro} metros")
 
 # Usando un bucle for para imprimir números del 1 al 5
 
+
+"""
 print(f"Usando un bucle for:")
 for i in range(1, 6):
     print(i)
@@ -149,3 +151,5 @@ contador = 1
 while contador <= 12:
     print(contador)
     contador += 2
+    
+"""
