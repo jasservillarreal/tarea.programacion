@@ -14,6 +14,8 @@ area_calculada=calculadora.calcular_area()
 print(f"el area del circulo con radio  {radio} es  {area_calculada} unidades cuadradas ")
 """""
 
+
+
 #calcular mi promedio de notas
 
 """"
@@ -33,10 +35,11 @@ nota_total=calculadora.promedio_semestre()
 print(f"el promedio de mi semestre es {nota_total}")
 
 """
+#Ejemplo de código orientado a objetos en Python que utiliza condicionales y métodos mágicos,
+#  y contiene un ciclo for y un ciclo while
 
-# ejemplo de código orientado a objetos en Python que utiliza condicionales y métodos mágicos, y contiene un ciclo for y un ciclo while
 
-
+"""""
 class Vehiculo:
      def __init__(self,marca,modelo,año):
         self.marca=marca
@@ -96,3 +99,35 @@ while True:
         print("Vehículo no encontrado en la lista.")
 
 print("Programa terminado.")
+"""""
+
+
+# rectangulo
+
+class Rectangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+
+    def area(self):
+        area_rectangulo=self.base * self.altura
+        return area_rectangulo
+
+    def perimetro(self):
+       perimetro_rectangulo=2 * (self.base + self.altura)
+       return perimetro_rectangulo
+base = float(input("Introduce la base en metros: "))
+altura = float(input("Introduce la altura en metros: "))
+    
+# Crear una instancia de la clase Rectangulo
+
+mi_rectangulo = Rectangulo(base,altura)
+
+# Calcular el área y el perímetro
+
+area = mi_rectangulo.area()
+perimetro = mi_rectangulo.perimetro()
+
+# Imprimir los resultados
+print(f"El área del rectángulo es: {area} metros cuadradas")
+print(f"El perímetro del rectángulo es: {perimetro} metros")
