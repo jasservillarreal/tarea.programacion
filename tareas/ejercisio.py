@@ -1,4 +1,6 @@
-
+""" Jasser Esteban Vilarreal Buitrago"""
+# SANTIAGO ECHEVERRI ARTEAGA #
+"""PROGRAMACION"""
 #suma de  2 movimientos armonimath.cos simpples
 #()
 import math
