@@ -91,7 +91,7 @@ else:
 #cadenas y listas[ESTUDIAR]
 #metodos de dicionarioss
 
-
+"""
 for i in [3,20,8]:
     print(i)
 
@@ -109,3 +109,74 @@ lista=[1,2,3,4,5,6,7,8,9,10,11]
 "hola mundo!"
 palabra="hola mundo!"
 palabra[-1]
+
+"""
+
+#6/09/2023
+
+"""
+def main(a):
+    return("hola mundo "*a)
+if __name__=="__main__":
+    variable=main(3)
+    print(variable)
+"""
+
+"""
+def main(a):
+    respuesta=3*a-2
+    return(respuesta)
+
+def cuadratica (x):
+    resultado=main(x)**2-2*main(x)
+    return(resultado)
+
+if __name__=="__main__":
+    variable=cuadratica(3)
+    print(variable)
+    """
+"""
+
+def main(a:float):
+    respuesta=3*a-2
+    return(respuesta)
+
+def cuadratica ( y_0:float, v_0:float, t:float,a:float =9.8):
+   #aceleracion de la gravedad
+    resultado=y_0+v_0*t+0.5*a*t**2
+    return(resultado)
+
+if __name__=="__main__":
+    variable=cuadratica(3,10,1,-20)
+    print(variable)
+
+    """
+#argumentos parametricos_____1
+#argumentos predefinidos_____3
+# *args______________________2
+#*kwargs_____________________4
+
+"""
+def main(*a:float):
+    respuesta=3*a-2
+    return(respuesta)
+
+for i in range(len(a)):
+    print(f"el elemento{i}es{a[i]}")
+# print(type(a))
+ #print(len(a))
+ #print((a))
+
+def cuadratica ( y_0:float, v_0:float, t:float,a:float =9.8):
+   #aceleracion de la gravedad
+    resultado=y_0+v_0*t+0.5*a*t**2
+    return(resultado)
+
+if __name__=="__main__":
+   # variable=cuadratica(3,10,1,10)
+    main(3,5,1,"hola",true,12)
+    """
+#para el viernes 
+#FACTORIAL USANDO FOR
+#FACTORIAL SIN USAR FOR CON FUNCIONES 
+#FACTORIAL EN UNA LINEA
