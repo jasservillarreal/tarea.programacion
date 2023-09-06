@@ -1,24 +1,30 @@
 
-#suma de  2 movimientos armonicos simpples
-
+#suma de  2 movimientos armonimath.cos simpples
+#()
 import math
 
-# Ingresa las amplitudes y fases de los dos movimientos armónicos
-amplitud1 = float(input("Ingresa la amplitud del primer MAS: "))
-fase1 = float(input("Ingresa la fase del primer MAS (en radianes): "))
-amplitud2 = float(input("Ingresa la amplitud del segundo MAS: "))
-fase2 = float(input("Ingresa la fase del segundo MAS (en radianes): "))
+class movimiento_armonico:
 
-# Calcula la magnitud resultante
-magnitud_resultante = math.sqrt(amplitud1**2 + amplitud2**2)
+    def __init__ (self,frecuencia,amplitud1,fase1,amplitud2,fase2):
+        self.frecuencia=frecuencia
+        self.amplitud1=amplitud1
+        self.fase1=fase1
+        self.amplitud2=amplitud2
+        self.fase2=fase2
+    
+    def calcular_amplitud(self):
+        amplitud=((self.amplitud1*math.cos(self.fase1)+self.amplitud2*math.cos(self.fase2))**(1/2)+(self.amplitud1*math.sin(self.fase1)+self.amplitud2*math.sin(self.fase2))**(1/2))**(1/2)
+        
+    def calcular_fase(self):
+        fase=math.atan((self.amplitud1*math.cos(self.fase1)+self.amplitud2*math.cos(self.fase2))/(self.amplitud1*math.sin(self.fase1)+self.amplitud2*math.sin(self.fase2)))
 
-# Calcula el ángulo resultante
-angulo_resultante = math.atan2(amplitud2, amplitud1)
+        return movimiento_armonico
+ #datos del primer movimiento armonico
+ frecuencia=input(float("insrese la frecuencia natural de los dos movimientos armonimath.cos"))
+ amplitud1=input(float("ingrese la amplitud del primer movimiento"))
+ fase1=input(float("ingrese la fase del primer movimiento"))
+ # dato del segundo movimiento armonico  
+ amplitud2=input(float("ingrese la amplitud del segundo movimiento"))
+ fase2=input(float("ingrese la fase del segundo movimiento"))
 
-# Convierte el ángulo de radianes a grados si lo deseas
-angulo_resultante_grados = math.degrees(angulo_resultante)
-
-# Imprime los resultados
-print(f"Magnitud resultante: {magnitud_resultante}")
-print(f"Ángulo resultante en radianes: {angulo_resultante}")
-print(f"Ángulo resultante en grados: {angulo_resultante_grados}")
+    
