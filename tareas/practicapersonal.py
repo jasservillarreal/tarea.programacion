@@ -35,11 +35,11 @@ nota_total=calculadora.promedio_semestre()
 print(f"el promedio de mi semestre es {nota_total}")
 
 """
-#Ejemplo de código orientado a objetos en Python que utiliza condicionales y métodos mágimath.cos,
+#Ejemplo de código orientado a objetos en Python que utiliza condicionales y métodos mágicos,
 #  y contiene un ciclo for y un ciclo while
 
 
-""""
+
 class Vehiculo:
      def __init__(self,marca,modelo,año):
         self.marca=marca
@@ -99,7 +99,7 @@ while True:
         print("Vehículo no encontrado en la lista.")
 
 print("Programa terminado.")
-"""
+
 
 
 # rectangulo
