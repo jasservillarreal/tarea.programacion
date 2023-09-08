@@ -38,8 +38,7 @@ print(f"el promedio de mi semestre es {nota_total}")
 #Ejemplo de código orientado a objetos en Python que utiliza condicionales y métodos mágicos,
 #  y contiene un ciclo for y un ciclo while
 
-
-
+"""
 class Vehiculo:
      def __init__(self,marca,modelo,año):
         self.marca=marca
@@ -99,8 +98,7 @@ while True:
         print("Vehículo no encontrado en la lista.")
 
 print("Programa terminado.")
-
-
+"""
 
 # rectangulo
 
@@ -153,3 +151,26 @@ while contador <= 12:
     contador += 2
     
 """
+"""
+#lamda factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)
+
+# Ejemplo de uso
+numero = 5
+resultado = factorial(numero)
+print(f"El factorial de {numero} es {resultado}")
+
+
+factorial = lambda n: 1 if n == 0 else n * factorial(n - 1)
+numeros = [5, 4, 3, 2, 1]
+resultados = [factorial(numero) for numero in numeros]
+print(resultados)
+"""
+prime = lambda f: lambda x: x * f(f)(x - 1) if x > 0 else 1
+factorial = prime(prime)
+
+# Ejemplo de uso
+numero = 5
+resultado = factorial(numero)
+print(f"El factorial de {numero} es {resultado}")
