@@ -66,3 +66,4 @@ while True:
         break
     else:
         print("Opción no válida. Por favor, elija una opción del 1 al 7.")
+
