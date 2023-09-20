@@ -18,7 +18,7 @@
 
 #un juego para adivinar un numero
 #a=10
-"""""
+"""
 b=100
 n=randint(a,b)
 for i in range(5)
@@ -31,17 +31,17 @@ for i in range(5)
         print("ganaste")
         break
 
-    """""
+    
 
-""""
+
 from typing import Any
 
 """
-
+"""
 class vector:
 
     
-    """Clase vector en 2D con coordenadas cartesianas y polares.
+    Clase vector en 2D con coordenadas cartesianas y polares.
     Permite suma entre vectores y multiplicación
     def __init__(self, a, b):
         self.x = a
@@ -88,10 +88,15 @@ else:
 
 #JSON
 #javaascript,objet,notation
-#cadenas y listas[ESTUDIAR]
+#cadenas y listas[ESTUDIAR]tumplpas y diccionarios
 #metodos de dicionarioss
+#tumplas,una lista que es inmutable
+# con un dicionario la llave no puede ser lista pero si un tumpla
+#copy()otro espacio de memoria
+#[set y generadores]
 
 """
+
 for i in [3,20,8]:
     print(i)
 
@@ -111,72 +116,17 @@ palabra="hola mundo!"
 palabra[-1]
 
 """
+def torre_hanoi(n, origen, destino, auxiliar):
+    if n == 1:
+        print(f'Mueve disco 1 de {origen} a {destino}')
+        return
+    torre_hanoi(n - 1, origen, auxiliar, destino)
+    print(f'Mueve disco {n} de {origen} a {destino}')
+    torre_hanoi(n - 1, auxiliar, destino, origen)
 
-#6/09/2023
+# Cambia el número de discos según tus necesidades
+num_discos = 2
 
-"""
-def main(a):
-    return("hola mundo "*a)
-if __name__=="__main__":
-    variable=main(3)
-    print(variable)
-"""
+torre_hanoi(num_discos, 'A', 'C', 'B')
 
-"""
-def main(a):
-    respuesta=3*a-2
-    return(respuesta)
-
-def cuadratica (x):
-    resultado=main(x)**2-2*main(x)
-    return(resultado)
-
-if __name__=="__main__":
-    variable=cuadratica(3)
-    print(variable)
-    """
-"""
-
-def main(a:float):
-    respuesta=3*a-2
-    return(respuesta)
-
-def cuadratica ( y_0:float, v_0:float, t:float,a:float =9.8):
-   #aceleracion de la gravedad
-    resultado=y_0+v_0*t+0.5*a*t**2
-    return(resultado)
-
-if __name__=="__main__":
-    variable=cuadratica(3,10,1,-20)
-    print(variable)
-
-    """
-#argumentos parametricos_____1
-#argumentos predefinidos_____3
-# *args______________________2
-#*kwargs_____________________4
-
-"""
-def main(*a:float):
-    respuesta=3*a-2
-    return(respuesta)
-
-for i in range(len(a)):
-    print(f"el elemento{i}es{a[i]}")
-# print(type(a))
- #print(len(a))
- #print((a))
-
-def cuadratica ( y_0:float, v_0:float, t:float,a:float =9.8):
-   #aceleracion de la gravedad
-    resultado=y_0+v_0*t+0.5*a*t**2
-    return(resultado)
-
-if __name__=="__main__":
-   # variable=cuadratica(3,10,1,10)
-    main(3,5,1,"hola",true,12)
-    """
-#para el viernes 
-#FACTORIAL USANDO FOR
-#FACTORIAL SIN USAR FOR CON FUNCIONES 
-#FACTORIAL EN UNA LINEA
+ 
