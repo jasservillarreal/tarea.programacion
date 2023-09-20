@@ -44,3 +44,5 @@ print(x(7))
 ########################################
 
 cuadrado = lambda x: x**2  # Define una función lambda en una sola línea
+
+print(0**0)

@@ -25,6 +25,7 @@ while True:
         mayor_numero = numero
     if numero < menor_numero:
         menor_numero = numero
+   
 
 # Mostramos el resultado
 
