@@ -197,37 +197,35 @@ de generadores, el uso de funciones, clases, manejo de excepciones, *args y
 
 ######################################################################
 
+import numpy as np
+import pandas as pd
 
-# import pandas as pd
-# import numpy as np
-# import scipy
+def resolver_sistema_lineal(A, B, metodo='eliminacion_gaussiana', **kwargs):
+    if metodo == 'eliminacion_gaussiana':
+        x = np.linalg.solve(A, B)
+    elif metodo == 'descomposicion_LU':
+        P, L, U = scipy.linalg.lu(A)
+        y = np.linalg.solve(L, B)
+        x = np.linalg.solve(U, y)
+    else:
+        raise ValueError("Método no soportado")
 
-# def resolver_sistema_lineal(A, B, metodo='eliminacion_gaussiana', **kwargs):
-#     if metodo == 'eliminacion_gaussiana':
-#         x = np.linalg.solve(A, B)
-#     elif metodo == 'descomposicion_LU':
-#         P, L, U = scipy.linalg.lu(A)
-#         y = np.linalg.solve(L, B)
-#         x = np.linalg.solve(U, y)
-#     else:
-#         raise ValueError("Método no soportado")
+    return x
 
-#     return x
+# Ejemplo de uso
+A = np.array([[2, 1], [5, 3]])
+B = np.array([1, 2])
+x = resolver_sistema_lineal(A, B, metodo='eliminacion_gaussiana')
 
-# # Ejemplo de uso
-# A = np.array([[2, 1], [5, 3]])
-# B = np.array([1, 2])
-# x = resolver_sistema_lineal(A, B, metodo='eliminacion_gaussiana')
+# Verificación
+resultado = np.dot(A, x)
+print("Resultado del sistema Ax:", resultado)
+print("Vector B:", B)
 
-# # Verificación
-# resultado = np.dot(A, x)
-# print("Resultado del sistema Ax:", resultado)
-# print("Vector B:", B)
-
-# # Comparar el resultado con B
-# if np.allclose(resultado, B):
-#     print("La solución es correcta.")
-# else:
-#     print("La solución no es correcta.")
+# Comparar el resultado con B
+if np.allclose(resultado, B):
+    print("La solución es correcta.")
+else:
+    print("La solución no es correcta.")
 
 
